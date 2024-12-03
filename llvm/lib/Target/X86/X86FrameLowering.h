@@ -35,6 +35,8 @@ public:
   const X86InstrInfo &TII;
   const X86RegisterInfo *TRI;
 
+  bool SaveArgs;
+
   unsigned SlotSize;
 
   /// Is64Bit implies that x86_64 instructions are available.

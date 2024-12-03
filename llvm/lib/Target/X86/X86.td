@@ -314,6 +314,8 @@ def FeatureUSERMSR : SubtargetFeature<"usermsr", "HasUSERMSR", "true",
                                       "Support USERMSR instructions">;
 def FeaturePCONFIG : SubtargetFeature<"pconfig", "HasPCONFIG", "true",
                                       "platform configuration instruction">;
+def FeatureSaveArgs : SubtargetFeature<"save-args", "SaveArgs", "true",
+                                       "Save register arguments on the stack.">;
 def FeatureMOVDIRI  : SubtargetFeature<"movdiri", "HasMOVDIRI", "true",
                                        "Support movdiri instruction (direct store integer)">;
 def FeatureMOVDIR64B : SubtargetFeature<"movdir64b", "HasMOVDIR64B", "true",
